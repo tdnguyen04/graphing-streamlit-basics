@@ -9,8 +9,8 @@ start_point = -50
 step = 0.25
 num_points = int(abs(start_point) / step * 2)
 
-a = 2
-b = 3
+a = st.slider("Slope", -20.0, 20.0, 2.0)
+b = st.slider("Y-intercept", -20.0, 20.0, 3.0)
 
 x_vals = [start_point + i * step for i in range(num_points)]
 y_vals = [a * x + b for x in x_vals]
